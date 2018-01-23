@@ -1,6 +1,6 @@
 # talk-unit-testing-with-jest
 
-https://docs.google.com/presentation/d/11x50v6ANYCuz336HavFxfMNrIIqqEWD0UQ6LEkNWkLo/edit#slide=id.p
+[Slides](https://docs.google.com/presentation/d/11x50v6ANYCuz336HavFxfMNrIIqqEWD0UQ6LEkNWkLo/edit#slide=id.p)
 
 ## About
 ### Author
