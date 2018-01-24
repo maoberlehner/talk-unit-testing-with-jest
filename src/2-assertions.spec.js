@@ -37,6 +37,21 @@ describe(`Object`, () => {
     expect(anObject).toEqual(anObject);
     expect({ foo: `bar` }).toEqual({ foo: `bar` });
   });
+
+  test(`Exact with anything: toEqual()`, () => {
+    const anObject = { foo: `foo`, bar: `bar` };
+
+    expect(anObject).toEqual({ foo: `foo`, bar: expect.anything() });
+
+    // Quiz: what is anything?
+    // const anObjectWithNull = { foo: null };
+    // const anObjectWithUndefined = { foo: undefined };
+    // const anObjectWithFalse = { foo: false };
+
+    // expect(anObjectWithNull).toEqual({ foo: expect.anything() });
+    // expect(anObjectWithUndefined).toEqual({ foo: expect.anything() });
+    // expect(anObjectWithFalse).toEqual({ foo: expect.anything() });
+  });
 });
 
 describe(`Function`, () => {
