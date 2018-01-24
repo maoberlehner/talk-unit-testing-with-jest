@@ -1,4 +1,4 @@
-const helloWorld = require(`./1-basics`);
+const { helloWorld, helloWorldAsync } = require(`./1-basics`);
 
 test(`It should return the string "Hello World".`, () => {
   expect(helloWorld()).toBe(`Hello World`);
@@ -34,6 +34,10 @@ test(`It should return the string "Hello World".`, () => {
 
 // test.skip(`Don't run me.`, () => {
 //   expect(true).toBe(false);
+// });
+
+// test(`It should work with promises.`, async () => {
+//   expect(await helloWorldAsync()).toBe(`Hello World`);
 // });
 
 // beforeAll(() => {

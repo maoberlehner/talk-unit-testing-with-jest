@@ -4,6 +4,9 @@
     "node": true,
     "jest": true
   },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
   "extends": [
     "@avalanche/eslint-config"
   ]
