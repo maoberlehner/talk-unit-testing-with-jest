@@ -5,4 +5,9 @@ module.exports = {
   helloWorldAsync() {
     return Promise.resolve(`Hello World`);
   },
+  timersDemo(cb) {
+    setTimeout(() => {
+      cb();
+    }, 3000);
+  },
 };

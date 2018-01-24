@@ -1,4 +1,8 @@
-const { helloWorld, helloWorldAsync } = require(`./1-basics`);
+const {
+  helloWorld,
+  helloWorldAsync,
+  timersDemo,
+} = require(`./1-basics`);
 
 test(`It should return the string "Hello World".`, () => {
   expect(helloWorld()).toBe(`Hello World`);
@@ -38,6 +42,18 @@ test(`It should return the string "Hello World".`, () => {
 
 // test(`It should work with promises.`, async () => {
 //   expect(await helloWorldAsync()).toBe(`Hello World`);
+// });
+
+// test(`It should work with timers.`, () => {
+//   const mockFunction = jest.fn();
+
+//   // jest.useFakeTimers();
+
+//   timersDemo(mockFunction);
+
+//   // jest.runAllTimers();
+
+//   expect(mockFunction).toHaveBeenCalled();
 // });
 
 // beforeAll(() => {
